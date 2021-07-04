@@ -1,0 +1,320 @@
+
+*{ 
+    margin: 0;
+    padding: 0;    
+}
+
+body {
+    background-color: #242424;
+    background-image: url(../media/bg-body.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: 'Rubik', sans-serif;
+    color: $blanco;   
+    h1 {
+        font-family: $teko;
+        color: $amarillo;
+        font-size: 54px;
+        line-height: 48px;
+    }      
+    h2 {
+        font-family: $teko;
+        font-weight: $teko-medium;
+        font-size: 60px;
+        color: $amarillo;      
+        text-transform: uppercase;
+        letter-spacing: -1px;
+    }      
+    h3 {
+        font-family: $teko;
+        font-weight: $teko-medium;
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: -.5px;
+    }      
+    h4 {
+        font-size: 18px;
+        line-height: 28px;
+        text-transform: uppercase;
+        letter-spacing: -.2px;
+    }          
+    h5 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    p{
+        font-family: $rubik-medium;
+        color: $gris-light;
+    }
+}   
+
+#menu{
+    .active{
+        color: $amarillo;
+    }
+    .nav-item{
+        font-family: $teko;
+        font-size: 22px;
+        font-weight: 400;
+    }
+}
+  
+#slider{
+    padding-top:62px;
+}
+
+#servicios{     
+    background-color:$gris-oscuro;
+    background-image: url(../media/patternServicios.png);
+    img{
+        width: 96px;
+    }
+    .boton{
+    background-color: $gris-oscuro;
+    width: 100%;
+    height: 200px;
+    border-radius: $border-md;
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+    }
+    .btn{
+        width: 100%;             
+    }    
+    .text-btn{
+        font-family: $teko;
+        color: $amarillo;
+        font-size: 26px;
+        line-height: 80%;
+    }    
+}
+
+#emergencias{
+    background-color: $amarillo;
+   
+    .card-body{       
+        border:0cm;
+    } 
+}  
+ 
+#novedades{
+    background-color: $amarillo;
+       
+    margin-top: 20px;
+    border-radius: $border-md;
+  
+    
+}
+
+#destacados{
+    background-color: $blanco;
+    margin-top: 20px;
+    border-radius: $border-md;
+    .card{
+        width: 100%;
+        border-radius: $border-md;
+    }
+    .card img{
+        border-radius: $border-md;
+    }
+}
+
+#sitad{
+    background-color: $gris-oscuro;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: $border-md;  
+}
+
+#trabajos{
+    background-color: $blanco;
+    margin-top: 10px;
+    border-radius: $border-md;
+    .card{
+        width: 100%;
+        border-radius: $border-md;
+    }
+    .card img{
+        border-radius: $border-md;
+    }
+    
+    
+    .cerrar{        
+        text-align: end;
+        padding: 10px;
+       
+    }
+}
+
+.modal-footer{
+    border-top: none;  
+}
+
+#footer{
+    background-color: #1C1E23;    
+    background-image: url(/media/footer-bg.png);
+}
+
+
+#copy{
+    background-color:$amarillo;
+    h5{
+        color: $gris-light;
+    }  
+}
+/*TEXTOS EN RUBIK*/
+@mixin rubik ($size, $weight, $color){
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;    
+}
+.titulo-rubik-negro {
+    @include rubik(18px,$rubik-bold,$negro)
+}
+.subtitulo-rubik-negro {
+    @include rubik(16px,$rubik-medium,$negro)
+}
+.parrafo-rubik-negro {
+    @include rubik(16px,$rubik-medium,$negro)
+}
+.parrafo-rubik-blanco {
+    @include rubik(16px,$rubik-medium,$blanco)
+}
+.parrafo-rubik-amarillo {
+    @include rubik(16px,$rubik-medium,$amarillo)
+}
+.parrafo-rubik-footer{
+    @include rubik(14px,$rubik-light ,$gris-10 )
+}
+
+/*TEXTOS EN TEKO*/
+@mixin teko ($font, $weight, $size, $color){
+    font-family: $font;    
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;    
+}
+.titulo-teko-negro {
+    @include teko ($teko,$teko-medium,36px,$negro)
+}
+.titulo-teko-amarillo {
+    @include teko ($teko,$teko-medium,36px,$amarillo)
+}
+.titulo-teko-footer {
+    @include teko ($teko,$teko-medium,20px,$amarillo)
+}
+.titulo-teko-blanco {
+    @include teko ($teko,$teko-medium,36px,$blanco)
+}
+.titulo-teko-amarillo--xl{
+    @extend .titulo-teko-amarillo;
+    font-size: 48px
+}
+.titulo-teko-negro--xl{
+    @extend .titulo-teko-negro;
+    font-size: 48px
+}
+.titulo-teko-negro--lg{
+    @extend .titulo-teko-negro;
+    font-size: 32px;   
+}
+/*BACKGROUND-COLOR*/
+@mixin amarillo ($color){    
+    background-color: $color;    
+}
+.bg-amarillo {
+    @include amarillo ($amarillo)
+}
+@mixin gris ($color){    
+    background-color: $color;    
+}
+.bg-gris {
+    @include gris ($gris-oscuro)
+}
+@mixin negro ($color){    
+    background-color: $color;    
+}
+.card {
+    @include gris ($blanco)
+}
+.card-negro{
+    @extend .card;
+    background-color: $negro;
+}
+.card-gris{
+    @extend .card;
+    background-color: $gris-oscuro;
+}
+
+/*BORDES*/
+@mixin borde ($borde){    
+    border-radius: $borde;  
+}
+.brd-m {
+    @include borde ($border-md)
+}
+.brd-m--bottom{
+    @extend .brd-m;
+    border-bottom: 15px;
+}
+
+.text-size-{
+    font-family:$teko;  
+}
+
+/*BOUCLES*/
+@for $i from 2 through 10{
+    .text-size-#{$i} {font-size: 4px*$i;}
+}
+
+/*EACH-SIZE*/
+$sizes: (
+	"small": 12px,
+	"medium": 14px,
+	"regular": 16px,
+	"large":20px
+);
+@each $k, $v in $sizes{
+	.font-size-#{$k}{
+		font-size: $v;
+	}
+}
+/*MAPS WEIGHT*/
+$weight: (
+	"light":300,
+	"medium": 400,
+	"bold": 700	
+);
+@each $k, $v in $weight{
+	.font-size-#{$k}{
+		font-weight: $v;
+	}
+}
+/*MAPS BORDER-RADIUS*/
+$border: (
+    "small": 5px, 
+    "medium": 10px,
+    "large": 15px
+);
+@each $k, $v in $border{
+	.border-#{$k}{
+		border-radius: $v;
+	}
+}
+/*BOUCLE MARGIN-TOP*/
+$margin: 1px;
+@for $i from 1 to 6 {
+    .mtop-#{$i}{
+        margin-top: $margin *$i;
+    }
+}
+/*BOUCLE MARGIN-BOUTTOM*/
+$margin: 1px;
+@for $i from 1 to 6 {
+    .mtop-#{$i}{
+        margin-bottom: $margin *$i;
+    }
+}
+    
+    

@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&family=Teko:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #242424;
+  background-image: url(../media/bg-body.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: 'Rubik', sans-serif;
+  color: #FFFFFF;
+}
+
+body h1 {
+  font-family: "Teko", sans-serif;
+  color: #F9B200;
+  font-size: 54px;
+  line-height: 48px;
+}
+
+body h2 {
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  color: #F9B200;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+body h3 {
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: -.5px;
+}
+
+body h4 {
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+  letter-spacing: -.2px;
+}
+
+body h5 {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+body p {
+  font-family: 400;
+  color: #797a7a;
+}
+
+#menu .active {
+  color: #F9B200;
+}
+
+#menu .nav-item {
+  font-family: "Teko", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+#slider {
+  padding-top: 62px;
+}
+
+#servicios {
+  background-color: #1C1E23;
+  background-image: url(../media/patternServicios.png);
+}
+
+#servicios img {
+  width: 96px;
+}
+
+#servicios .boton {
+  background-color: #1C1E23;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#servicios .btn {
+  width: 100%;
+}
+
+#servicios .text-btn {
+  font-family: "Teko", sans-serif;
+  color: #F9B200;
+  font-size: 26px;
+  line-height: 80%;
+}
+
+#emergencias {
+  background-color: #F9B200;
+}
+
+#emergencias .card-body {
+  border: 0cm;
+}
+
+#novedades {
+  background-color: #F9B200;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+#destacados {
+  background-color: #FFFFFF;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+#destacados .card, #destacados .card-negro, #destacados .card-gris {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#destacados .card img, #destacados .card-negro img, #destacados .card-gris img {
+  border-radius: 10px;
+}
+
+#sitad {
+  background-color: #1C1E23;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+#trabajos {
+  background-color: #FFFFFF;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+#trabajos .card, #trabajos .card-negro, #trabajos .card-gris {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#trabajos .card img, #trabajos .card-negro img, #trabajos .card-gris img {
+  border-radius: 10px;
+}
+
+#trabajos .cerrar {
+  text-align: end;
+  padding: 10px;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+#footer {
+  background-color: #1C1E23;
+  background-image: url(/media/footer-bg.png);
+}
+
+#copy {
+  background-color: #F9B200;
+}
+
+#copy h5 {
+  color: #797a7a;
+}
+
+/*TEXTOS EN RUBIK*/
+.titulo-rubik-negro {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.subtitulo-rubik-negro {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.parrafo-rubik-negro {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.parrafo-rubik-blanco {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.parrafo-rubik-amarillo {
+  font-size: 16px;
+  font-weight: 400;
+  color: #F9B200;
+}
+
+.parrafo-rubik-footer {
+  font-size: 14px;
+  font-weight: 300;
+  color: #b8b8b8;
+}
+
+/*TEXTOS EN TEKO*/
+.titulo-teko-negro, .titulo-teko-negro--xl, .titulo-teko-negro--lg {
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #000000;
+}
+
+.titulo-teko-amarillo, .titulo-teko-amarillo--xl {
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #F9B200;
+}
+
+.titulo-teko-footer {
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #F9B200;
+}
+
+.titulo-teko-blanco {
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+
+.titulo-teko-amarillo--xl {
+  font-size: 48px;
+}
+
+.titulo-teko-negro--xl {
+  font-size: 48px;
+}
+
+.titulo-teko-negro--lg {
+  font-size: 32px;
+}
+
+/*BACKGROUND-COLOR*/
+.bg-amarillo {
+  background-color: #F9B200;
+}
+
+.bg-gris {
+  background-color: #1C1E23;
+}
+
+.card, .card-negro, .card-gris {
+  background-color: #FFFFFF;
+}
+
+.card-negro {
+  background-color: #000000;
+}
+
+.card-gris {
+  background-color: #1C1E23;
+}
+
+/*BORDES*/
+.brd-m, .brd-m--bottom {
+  border-radius: 10px;
+}
+
+.brd-m--bottom {
+  border-bottom: 15px;
+}
+
+.text-size- {
+  font-family: "Teko", sans-serif;
+}
+
+/*BOUCLES*/
+.text-size-2 {
+  font-size: 8px;
+}
+
+.text-size-3 {
+  font-size: 12px;
+}
+
+.text-size-4 {
+  font-size: 16px;
+}
+
+.text-size-5 {
+  font-size: 20px;
+}
+
+.text-size-6 {
+  font-size: 24px;
+}
+
+.text-size-7 {
+  font-size: 28px;
+}
+
+.text-size-8 {
+  font-size: 32px;
+}
+
+.text-size-9 {
+  font-size: 36px;
+}
+
+.text-size-10 {
+  font-size: 40px;
+}
+
+/*EACH-SIZE*/
+.font-size-small {
+  font-size: 12px;
+}
+
+.font-size-medium {
+  font-size: 14px;
+}
+
+.font-size-regular {
+  font-size: 16px;
+}
+
+.font-size-large {
+  font-size: 20px;
+}
+
+/*MAPS WEIGHT*/
+.font-size-light {
+  font-weight: 300;
+}
+
+.font-size-medium {
+  font-weight: 400;
+}
+
+.font-size-bold {
+  font-weight: 700;
+}
+
+/*MAPS BORDER-RADIUS*/
+.border-small {
+  border-radius: 5px;
+}
+
+.border-medium {
+  border-radius: 10px;
+}
+
+.border-large {
+  border-radius: 15px;
+}
+
+/*BOUCLE MARGIN-TOP*/
+.mtop-1 {
+  margin-top: 1px;
+}
+
+.mtop-2 {
+  margin-top: 2px;
+}
+
+.mtop-3 {
+  margin-top: 3px;
+}
+
+.mtop-4 {
+  margin-top: 4px;
+}
+
+.mtop-5 {
+  margin-top: 5px;
+}
+
+/*BOUCLE MARGIN-BOUTTOM*/
+.mtop-1 {
+  margin-bottom: 1px;
+}
+
+.mtop-2 {
+  margin-bottom: 2px;
+}
+
+.mtop-3 {
+  margin-bottom: 3px;
+}
+
+.mtop-4 {
+  margin-bottom: 4px;
+}
+
+.mtop-5 {
+  margin-bottom: 5px;
+}
+/*# sourceMappingURL=estilos.css.map */
