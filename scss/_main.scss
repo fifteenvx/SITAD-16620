@@ -79,15 +79,18 @@ body {
     justify-content: center;
     align-items: center;      
     }
-    .btn{
-        width: 100%;             
-    }    
     .text-btn{
         font-family: $teko;
         color: $amarillo;
         font-size: 26px;
         line-height: 80%;
-    }    
+    }
+    .boton:hover{
+        background-color: $amarillo;
+    }
+    .text-btn:hover{
+        color: $gris-oscuro;
+    }
 }
 
 #emergencias{
@@ -118,6 +121,16 @@ body {
     .card img{
         border-radius: $border-md;
     }
+    img{  
+        filter: gray; 
+        -webkit-filter: grayscale(1);
+        
+    }
+    img:hover{
+        filter: none;
+        -webkit-filter: grayscale(0);
+        
+    }
 }
 
 #sitad{
@@ -145,6 +158,9 @@ body {
         padding: 10px;
        
     }
+}
+.btn-link{
+    color: $amarillo;
 }
 
 .modal-footer{
@@ -235,6 +251,14 @@ body {
 @mixin negro ($color){    
     background-color: $color;    
 }
+
+@mixin grisClaro ($color){    
+    background-color: $color;    
+}
+.bg-claro {
+    @include grisClaro ($gris-claro)
+}
+
 .card {
     @include gris ($blanco)
 }

@@ -95,15 +95,19 @@ body p {
           align-items: center;
 }
 
-#servicios .btn {
-  width: 100%;
-}
-
 #servicios .text-btn {
   font-family: "Teko", sans-serif;
   color: #F9B200;
   font-size: 26px;
   line-height: 80%;
+}
+
+#servicios .boton:hover {
+  background-color: #F9B200;
+}
+
+#servicios .text-btn:hover {
+  color: #1C1E23;
 }
 
 #emergencias {
@@ -135,6 +139,16 @@ body p {
   border-radius: 10px;
 }
 
+#destacados img {
+  filter: gray;
+  -webkit-filter: grayscale(1);
+}
+
+#destacados img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
 #sitad {
   background-color: #1C1E23;
   padding: 10px;
@@ -160,6 +174,10 @@ body p {
 #trabajos .cerrar {
   text-align: end;
   padding: 10px;
+}
+
+.btn-link {
+  color: #F9B200;
 }
 
 .modal-footer {
@@ -264,6 +282,10 @@ body p {
 
 .bg-gris {
   background-color: #1C1E23;
+}
+
+.bg-claro {
+  background-color: #2B2D31;
 }
 
 .card, .card-negro, .card-gris {
