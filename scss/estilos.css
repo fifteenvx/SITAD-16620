@@ -189,6 +189,23 @@ body p {
   background-image: url(/media/footer-bg.png);
 }
 
+#footer .social a {
+  color: #F9B200;
+  margin: 0 5px;
+  font-size: 16pt;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#footer .social a i {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+#footer .social a:hover {
+  color: #2B2D31;
+}
+
 #copy {
   background-color: #F9B200;
 }

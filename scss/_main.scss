@@ -94,20 +94,16 @@ body {
 }
 
 #emergencias{
-    background-color: $amarillo;
-   
+    background-color: $amarillo;   
     .card-body{       
         border:0cm;
     } 
 }  
  
 #novedades{
-    background-color: $amarillo;
-       
+    background-color: $amarillo;       
     margin-top: 20px;
-    border-radius: $border-md;
-  
-    
+    border-radius: $border-md;    
 }
 
 #destacados{
@@ -123,13 +119,11 @@ body {
     }
     img{  
         filter: gray; 
-        -webkit-filter: grayscale(1);
-        
+        -webkit-filter: grayscale(1);        
     }
     img:hover{
         filter: none;
-        -webkit-filter: grayscale(0);
-        
+        -webkit-filter: grayscale(0);        
     }
 }
 
@@ -150,13 +144,10 @@ body {
     }
     .card img{
         border-radius: $border-md;
-    }
-    
-    
+    }    
     .cerrar{        
         text-align: end;
-        padding: 10px;
-       
+        padding: 10px;       
     }
 }
 .btn-link{
@@ -169,10 +160,20 @@ body {
 
 #footer{
     background-color: #1C1E23;    
-    background-image: url(/media/footer-bg.png);
+    background-image: url(/media/footer-bg.png);    
+    .social a{
+        color: $amarillo;    
+        margin:0 5px;
+        font-size: 16pt;    
+        transition: 0.2s;
+    }  
+    .social a i{
+        transition: 0.8s;        
+    }    
+    .social a:hover{
+        color: $gris-claro;
+    }   
 }
-
-
 #copy{
     background-color:$amarillo;
     h5{

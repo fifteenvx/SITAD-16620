@@ -130,6 +130,15 @@ body {
 #footer {
   background-color: #1C1E23;
   background-image: url(/media/footer-bg.png); }
+  #footer .social a {
+    color: #F9B200;
+    margin: 0 5px;
+    font-size: 16pt;
+    transition: 0.2s; }
+  #footer .social a i {
+    transition: 0.8s; }
+  #footer .social a:hover {
+    color: #2B2D31; }
 
 #copy {
   background-color: #F9B200; }
